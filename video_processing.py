@@ -29,7 +29,7 @@ for frame in range(n_frames):
     if ret == False: 
         break()
     if frame % 100 == 0:
-        axs[img_index].imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        axs[img_index].imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
         axs[img_index].set_title(f'Frame: {frame}')
         axs[img_index].axis('off')
         img_index += 1
